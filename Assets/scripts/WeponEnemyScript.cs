@@ -78,7 +78,11 @@ public class WeponEnemyScript : MonoBehaviour
                 managerscript.instance.addscore(100);
                 Destroy(this.gameObject);
             }
-            
         }
+            if (collision.gameObject.CompareTag("killbox"))
+            {
+                Destroy(this.gameObject);
+
+            }
     }
 }

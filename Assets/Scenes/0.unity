@@ -1788,7 +1788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.13710396, g: 0.51828426, b: 0.745283, a: 1}
+  m_Color: {r: 0.13725491, g: 0.4291115, b: 0.74509805, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2827,7 +2827,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0067560077, y: -0.0026061684}
+  m_Offset: {x: 0.008081242, y: -0.0053036213}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.50647247, y: 0.5064721}
@@ -2837,7 +2837,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.37394524, y: 0.8243444}
+  m_Size: {x: 0.29571244, y: 0.6948556}
   m_EdgeRadius: 0
 --- !u!95 &1043287984
 Animator:

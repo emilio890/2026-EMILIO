@@ -106,8 +106,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bee0035df5e7b840955253df991714a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyTeleregyScript
-  speedenemyN: 1.5
-  speedenemyC: 3
+  speedenemyN: 0.5
+  speedenemyC: 2
   chasedistance: 3
   enemyhp: 3
 --- !u!61 &-8182646703634830807

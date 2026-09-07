@@ -45,6 +45,8 @@ public class Bossscript : MonoBehaviour
     }
     void Start()
     {
+        //tiemonshoot += 0.5f;
+
         puntoDisparo = new Transform[4];
         puntoDisparo[0] = transform.Find("disparo1");
         puntoDisparo[1] = transform.Find("disparo2");
@@ -108,7 +110,11 @@ public class Bossscript : MonoBehaviour
                 managerscript.instance.addscore(100);
                 Destroy(this.gameObject);
             }
+            if (collision.gameObject.CompareTag("killbox"))
+            {
+                Destroy(this.gameObject);
 
+            }
         }
     }
 }

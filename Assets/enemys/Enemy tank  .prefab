@@ -179,5 +179,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46a92bbc656fcf43b6a0d06ba2083ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyTankScript
-  speedenemy: 50
+  speedenemy: 45
   enemyhp: 4

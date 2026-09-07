@@ -10,7 +10,10 @@ public class bulletscript : MonoBehaviour
 
     private float time;
 
-
+    private void Start()
+    {
+        
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void OnEnable()
     {

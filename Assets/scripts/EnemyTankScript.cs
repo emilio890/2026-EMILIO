@@ -15,6 +15,7 @@ public class EnemyTankScript : MonoBehaviour
     {
         rbenemy = GetComponent<Rigidbody2D>();
         rbenemy.AddForce(Vector2.down * speedenemy);
+        //speedenemy += 5;
     }
 
     // Update is called once per frame
@@ -37,9 +38,13 @@ public class EnemyTankScript : MonoBehaviour
                 managerscript.instance.addscore(50);
                 Destroy(this.gameObject);
             }
-           
 
         }
+            if (collision.gameObject.CompareTag("killbox"))
+            {
+            Destroy(this.gameObject);
+
+            }
     }
   
 }

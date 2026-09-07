@@ -5,13 +5,15 @@ using UnityEngine;
 public class enemyscript : MonoBehaviour
 {
  Rigidbody2D rbenemy;
-   
+    [SerializeField]
+    float speedenemy;
 
 
     void Start()
     {
         rbenemy = GetComponent<Rigidbody2D>();
-        rbenemy.AddForce(Vector2.down * 100);
+        rbenemy.AddForce(Vector2.down * speedenemy);
+        //speedenemy += 10;
     }
 
     // Update is called once per frame
@@ -26,6 +28,11 @@ public class enemyscript : MonoBehaviour
             managerscript.instance.addscore(25);
             Destroy(this.gameObject);
 
+        }
+        if (collision.gameObject.CompareTag("killbox"))
+        {
+            Destroy(this.gameObject);
+            
         }
     }
 }

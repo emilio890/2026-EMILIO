@@ -26,6 +26,8 @@ public class EnemyTeleregyScript : MonoBehaviour
             player = playerobjet.transform;
         }
         rbenemy = GetComponent<Rigidbody2D>();
+        //speedenemyN += 1f;
+        //speedenemyC += 1f;
         
     }
 
@@ -55,8 +57,12 @@ public class EnemyTeleregyScript : MonoBehaviour
                 managerscript.instance.addscore(75);
                 Destroy(this.gameObject);
             }
-
         }
+            if (collision.gameObject.CompareTag("killbox"))
+            {
+                Destroy(this.gameObject);
+
+            }
     }
     
 }

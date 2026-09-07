@@ -12,6 +12,7 @@ public class SpawEnemyDeb : MonoBehaviour
     private float dOnEnemy;
 
     private float cronometre;
+    
     void Start()
     {
         SpawnerFila();
@@ -25,6 +26,7 @@ public class SpawEnemyDeb : MonoBehaviour
         {
             SpawnerFila();
             cronometre = 0;
+            timeinwave += 5;
         }
     }
     void SpawnerFila()
