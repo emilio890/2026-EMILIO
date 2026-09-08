@@ -30,6 +30,11 @@ public class managerscript : MonoBehaviour
     private GameObject menu;
     private bool pause = false;
     public static bool startgames = false;
+    [SerializeField]
+    private AudioSource menumusic;
+    [SerializeField]
+    private AudioSource ambientalmusic;
+
     private void OnEnable()
     {
         esc.Enable();
@@ -54,11 +59,15 @@ public class managerscript : MonoBehaviour
         {
             menu.SetActive(false);
             startgame();
+            menumusic.Stop();
+            ambientalmusic.Play();
             startgames = false;
         }
        else
         {
             menu.SetActive(true);
+            menumusic.Play();
+            ambientalmusic.Stop();
             Time.timeScale = 0;
         }
         
@@ -92,6 +101,8 @@ public class managerscript : MonoBehaviour
     }
     public void startgame()
     {
+        menumusic.Stop();
+        ambientalmusic.Play();
         menu.SetActive(false);
         Time.timeScale = 1;
     }
