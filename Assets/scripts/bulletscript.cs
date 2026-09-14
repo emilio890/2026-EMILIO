@@ -9,6 +9,10 @@ public class bulletscript : MonoBehaviour
     private float speed;
 
     private float time;
+   
+   
+    
+    
 
     private void Start()
     {
@@ -40,7 +44,10 @@ public class bulletscript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("enemy"))
         {
+           
+            
             gameObject.SetActive(false);
+
 
         }
     }

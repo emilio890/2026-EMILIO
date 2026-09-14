@@ -182,6 +182,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::bulletscript
   timeplay: 5
   speed: 4
+  animator: {fileID: 7574023955255846000}
+  splash: {fileID: 0}
+  nomtrigged: Golpe
 --- !u!95 &7574023955255846000
 Animator:
   serializedVersion: 7

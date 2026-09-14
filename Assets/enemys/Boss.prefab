@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 108551056490351356}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.373, y: -0.08, z: 0}
+  m_LocalPosition: {x: -0.034, y: -0.076, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -56,7 +56,7 @@ Transform:
   m_GameObject: {fileID: 373062338262978935}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.124, y: -0.186, z: 0}
+  m_LocalPosition: {x: 0.089, y: -0.072, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -87,7 +87,7 @@ Transform:
   m_GameObject: {fileID: 4022941142701980043}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.119, y: -0.198, z: 0}
+  m_LocalPosition: {x: -0.157, y: -0.009, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -106,6 +106,7 @@ GameObject:
   - component: {fileID: 3965077895099141418}
   - component: {fileID: 5091072055961890090}
   - component: {fileID: 688934156753887196}
+  - component: {fileID: 869684272857255477}
   m_Layer: 3
   m_Name: Boss
   m_TagString: enemy
@@ -123,7 +124,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.01, y: 2.429, z: 0}
-  m_LocalScale: {x: 7.9652, y: 3.7716563, z: 1}
+  m_LocalScale: {x: 24.421972, y: 19.48402, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1602829487457546000}
@@ -181,8 +182,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 3625043607559282579, guid: 19fb86013d8c24d6cb8410c0aadf30fa, type: 3}
-  m_Color: {r: 1, g: 0.514151, b: 0.941356, a: 1}
+  m_Sprite: {fileID: -3530720302699838993, guid: c050a9f762f2bac44ab6e52999a628ad, type: 3}
+  m_Color: {r: 1, g: 0.9803922, b: 0.9803922, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -252,17 +253,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0010417104, y: 0.0013056435}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 0.5}
+    oldSize: {x: 0.32, y: 0.17}
     newSize: {x: 1, y: 0.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 0.5}
+  m_Size: {x: 0.32499862, y: 0.15791571}
   m_EdgeRadius: 0
 --- !u!114 &688934156753887196
 MonoBehaviour:
@@ -282,7 +283,29 @@ MonoBehaviour:
   bullets: []
   ammo: 10
   tiemonshoot: 2
-  ymax: 4.02
+  ymax: 4.3
+--- !u!95 &869684272857255477
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8036189530682783043}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 60a46b1cc9158de469243a7ad71e76f3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8535650458729675022
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,7 +331,7 @@ Transform:
   m_GameObject: {fileID: 8535650458729675022}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.38, y: -0.07, z: 0}
+  m_LocalPosition: {x: 0.154, y: -0.009, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

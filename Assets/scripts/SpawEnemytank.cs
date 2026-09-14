@@ -24,6 +24,7 @@ public class SpawEnemytank : MonoBehaviour
             SpawnerFila();
             
             cronometre = 0;
+            timeinwave = Mathf.Max(1f, timeinwave - 0.1f);
             
         }
     }
@@ -36,7 +37,7 @@ public class SpawEnemytank : MonoBehaviour
             float posX = posIX + (i * dOnEnemy);
             Vector3 pos = new Vector3(posX, transform.position.y, transform.position.z);
 
-            Instantiate(prefabEnemydTank, pos, Quaternion.Euler(0,0,90));
+            Instantiate(prefabEnemydTank, pos, Quaternion.Euler(0,0,0));
         }
     }
 }

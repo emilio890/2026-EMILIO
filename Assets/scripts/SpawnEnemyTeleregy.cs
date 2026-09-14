@@ -24,6 +24,7 @@ public class SpawnEnemyTeleregy : MonoBehaviour
             SpawnerFila();
 
             cronometre = 0;
+            timeinwave = Mathf.Max(1f, timeinwave - 0.2f);
 
         }
     }

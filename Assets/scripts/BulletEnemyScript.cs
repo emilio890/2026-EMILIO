@@ -22,7 +22,7 @@ public class BulletEnemyScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector2.down * speed * Time.deltaTime);
+        transform.Translate(Vector2.up * speed * Time.deltaTime);
         time += Time.deltaTime;
         if (this.gameObject.activeInHierarchy)
         {

@@ -76,6 +76,7 @@ public class Bossscript : MonoBehaviour
             { 
                 GameObject bullet = Getbullet();
                 bullet.transform.position = puntoDisparo[i].position;
+                bullet.transform.rotation = Quaternion.Euler(0, 0, 180);
                 bullet.SetActive(true);
             }
             cronometreshoot = 0;
@@ -103,8 +104,8 @@ public class Bossscript : MonoBehaviour
 
             enemyhp--;
 
-            GetComponent<SpriteRenderer>().material.DOColor(Color.black, 1).From();
-            GetComponent<SpriteRenderer>().material.DOColor(Color.pink, 1);
+            GetComponent<SpriteRenderer>().material.DOColor(Color.red, 1).From();
+            GetComponent<SpriteRenderer>().material.DOColor(Color.white, 1);
             if (enemyhp <= 0)
             {
                 managerscript.instance.addscore(100);

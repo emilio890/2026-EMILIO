@@ -23,6 +23,7 @@ public class SpawWeponEnemy : MonoBehaviour
             SpawnerFila();
 
             cronometre = 0;
+            timeinwave = Mathf.Max(2f, timeinwave - 0.1f);
 
         }
         

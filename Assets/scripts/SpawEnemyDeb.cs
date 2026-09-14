@@ -26,7 +26,8 @@ public class SpawEnemyDeb : MonoBehaviour
         {
             SpawnerFila();
             cronometre = 0;
-            timeinwave += 5;
+            timeinwave = Mathf.Max(1f, timeinwave - 0.4f);
+
         }
     }
     void SpawnerFila()

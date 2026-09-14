@@ -32,7 +32,7 @@ public class EnemyTankScript : MonoBehaviour
             enemyhp--;
             
             GetComponent<SpriteRenderer>().material.DOColor(Color.red, 1).From();
-            GetComponent<SpriteRenderer>().material.DOColor(Color.orange, 1);
+            GetComponent<SpriteRenderer>().material.DOColor(Color.white, 1);
             if (enemyhp <= 0)
             {
                 managerscript.instance.addscore(50);
