@@ -24,7 +24,7 @@ public class SpawBoss : MonoBehaviour
             SpawnerFila();
 
             cronometre = 0;
-            timeinwave = Mathf.Max(20f, timeinwave - 0.01f);
+            timeinwave = Mathf.Max(20f, timeinwave - 5f);
 
         }
     }

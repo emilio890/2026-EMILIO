@@ -24,7 +24,7 @@ public class SpawEnemytank : MonoBehaviour
             SpawnerFila();
             
             cronometre = 0;
-            timeinwave = Mathf.Max(1f, timeinwave - 0.1f);
+            timeinwave = Mathf.Max(8f, timeinwave - 0.1f);
             
         }
     }
